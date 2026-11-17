@@ -10,10 +10,10 @@ Feature: features to test the functionalities
         Examples:
           | text | number |
           | lumu lumu lumu lumu lumu illuminates illuminates attacks and adversaries lumu illuminates all attacks and adversaries | 16 |
-          | hello-lumu                | 1 |
-          | hello, lumu?    | 2 |
-          | hello, 😀lumu lumu--attacks   | 4 |
-          | lumu--attacks   | 2 |
+          | https://wordcounter.net/        | 1 |
+          | hello, lumu?                    | 2 |
+          | hello, 😀lumu lumu--attacks     | 4 |
+          | lumu--attacks                   | 2 |
 
     Scenario Outline: Validate number of characters
         When I type the text "<text>"
