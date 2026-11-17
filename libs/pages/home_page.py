@@ -13,11 +13,12 @@ class HomePage(BasePage):
         input_text = self.find_element(HomeSelectors.text_input)
         input_text.clear()
         input_text.send_keys(text)
-        #time.sleep(1)
+        time.sleep(1)
     
     def get_number_words(self):
         number_words = self.visibility_of_element_located(HomeSelectors.number_words_span)
         return number_words.text.strip()
-
-
     
+    def get_number_characters(self):
+        number_characters = self.visibility_of_element_located(HomeSelectors.number_characters_span)
+        return number_characters.text.strip()
