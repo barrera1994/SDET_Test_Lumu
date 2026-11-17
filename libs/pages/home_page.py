@@ -1,5 +1,3 @@
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 from libs.pages.base_page import BasePage            
 from libs.pages.selectors.home_selectors import HomeSelectors
 import time
