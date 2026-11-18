@@ -11,7 +11,7 @@ class HomePage(BasePage):
         input_text = self.find_element(HomeSelectors.text_input)
         input_text.clear()
         input_text.send_keys(text)
-        time.sleep(1)
+        ##time.sleep(1)
     
     def get_number_words(self):
         number_words = self.visibility_of_element_located(HomeSelectors.number_words_span)
@@ -22,6 +22,7 @@ class HomePage(BasePage):
         return number_characters.text.strip()
     
     def get_rows_table_keyword_density(self):
+        self.visibility_of_element_located(HomeSelectors.keyword_density_table_rows_col)
         rows_table_density = self.find_elements(HomeSelectors.keyword_density_table_rows)
         return rows_table_density
     
@@ -32,3 +33,7 @@ class HomePage(BasePage):
     def get_keyword_density_number(self, row):
         value_number = row.find_element(HomeSelectors.keyword_density_table_number_col[0], HomeSelectors.keyword_density_table_number_col[1]).text.strip()
         return value_number
+
+    def clear_text_field(self):
+        input_text = self.find_element(HomeSelectors.text_input)
+        input_text.clear()

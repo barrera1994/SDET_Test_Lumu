@@ -45,3 +45,4 @@ Feature: features to test the functionalities
           | lumu lumu lumu illuminates illuminates attacks and adversaries lumu illuminates all attacks and adversaries | lumu      | 4       | illuminates | 3       | attacks   | 2       |
           | lumu where where attacks and adversaries lumu and where all lumu                                            | lumu      | 3       | where       | 3       | and       | 2       |
           | julian julian julianjulian  julian julian hola hola lumu mu lumu                                            | julian    | 3       | hola        | 2       | lumu      | 1       |
+          | lumu lumu lumu                                                                                              | lumu      | 3       |             |         |           |         |

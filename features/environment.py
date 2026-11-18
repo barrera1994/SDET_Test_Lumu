@@ -8,6 +8,9 @@ def before_all(context):
     context.basePage = BasePage(context.driver)
     context.homePage = HomePage(context.driver)
 
+def after_scenario(context, scenario):
+    context.homePage.clear_text_field()
+
 def after_all(context):
     if context.driver is not None:
         context.driver.quit()
