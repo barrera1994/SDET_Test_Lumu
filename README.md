@@ -24,3 +24,5 @@ prueba tecnica vacante Lumu
     a. para ejecutar todo utiliza el comando "behave"  
     b. para ejecutar un escenario en especifico utiliza tags "behave --tags=@punto1"  
 
+## 4. reporte html
+    al finalizar cada ejecución, se genera automáticamente un reporte con los resultados de los casos probados dentro de la carpeta reports/
