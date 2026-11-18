@@ -11,10 +11,12 @@ Feature: features to test the functionalities
         Examples:
           | text                                                                                                                  | number |
           | lumu lumu lumu lumu lumu illuminates illuminates attacks and adversaries lumu illuminates all attacks and adversaries | 16     |
-          | https://wordcounter.net/                                                                                              | 1      |
+          | lumu julian123 @julian-barrera 12345,3                                                                                | 4      |
           | hello, lumu?                                                                                                          | 2      |
-          | hello, 😀lumu lumu--attacks                                                                                           | 4      |
+          |                                                                                                                       | 0      |
           | lumu--attacks                                                                                                         | 2      |
+          | 😀lumu                                                                                                                | 1      |
+          | hello, 😀lumu lumu--attacks                                                                                           | 4      |
 
     @punto2
     Scenario Outline: Validate number of characters
@@ -27,6 +29,7 @@ Feature: features to test the functionalities
           | lumu °!"#$%&/()=?                                                                                                     | 17     |
           | lumu /n/n                                                                                                             | 9      |
           | lumu,---😀lumu                                                                                                        | 14     |
+          |                                                                                                                       | 0     |
 
     @punto3
     Scenario Outline: validate top 3 Keyword Density

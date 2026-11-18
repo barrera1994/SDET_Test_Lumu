@@ -1,5 +1,7 @@
-from behave import when
+from behave import when,use_step_matcher
 
-@when('I type the text "{text}"')
+use_step_matcher("re")
+
+@when('I type the text "(.*)"')
 def step_type_text(context, text):
     return context.homePage.send_value_input(text)
