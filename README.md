@@ -9,7 +9,7 @@ prueba tecnica vacante Lumu
     Patrón de Arquitectura: POM  
 
 ## 2. instalacion y configuracion
-    a. clona el repositorio https://github.com/barrera1994/Test_QA_Engineer  
+    a. clona el repositorio https://github.com/barrera1994/SDET_Test_Lumu
     b. crea y activa entorno virtual      
         -En windows  
             python -m venv .venv  
